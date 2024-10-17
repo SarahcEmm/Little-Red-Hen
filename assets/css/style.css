@@ -1,3 +1,7 @@
+* {
+    
+}
+
 body {
     font-family: Arial, sans-serif;
     background-image: url("../images/backgroundimage.jpg");
@@ -5,16 +9,17 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
 }
 .story-text {
-    font-size: 200%;
+    font-size: 300%;
     text-align: center;
 }
 .image-container {
     position: relative;
     display: inline-block;
     left: 50%;
-    margin-top: 70px;
+    margin-top: 90px;
 
 }
 
@@ -26,7 +31,7 @@ body {
     
 }
 .clickable-image {
-    width: 200px; /* Adjust size as necessary */
+    width: 200px; 
     cursor: pointer;
 }
 
@@ -57,3 +62,15 @@ body {
     margin: 0;
     font-size: 25px;
 }
+.additional-images {
+    display: flex;               
+    justify-content: center;
+    align-items: center;        
+    width: 100%;                
+    max-width: 1200px;          
+    margin: 20px auto;          
+    padding:  20px; 
+    right: 50%; 
+           
+}
+
