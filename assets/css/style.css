@@ -1,3 +1,14 @@
 body {
-    background-color: aquamarine;
+    font-family: Arial, sans-serif;
 }
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+#clickable-image {
+    width: 300px; /* Adjust size as necessary */
+    cursor: pointer;
+}
+
