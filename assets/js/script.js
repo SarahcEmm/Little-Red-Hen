@@ -1,10 +1,16 @@
+let mainClickCount = 0;
 document.getElementById("clickable-image").addEventListener("click", function() {
-    var bubble = document.getElementById("speech-bubble");
-    if (bubble.style.display === "none" || bubble.style.display === "") {
-        bubble.style.display = "block";
+    var bubble1 = document.getElementById("main-speech-bubble-1");
+    var bubble2 = document.getElementById("main-speech-bubble-2");
+
+    if (mainClickCount % 2 === 0) {
+        bubble1.style.display = "block";
+        bubble2.style.display = "none";
     } else {
-        bubble.style.display = "none";
+        bubble1.style.display = "none";
+        bubble2.style.display = "block";
     }
+    mainClickCount++;
 });
 document.getElementById("image-1").addEventListener("click", function() {
     var bubble = document.getElementById("speech-bubble-1");
